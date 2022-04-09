@@ -1,0 +1,19 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .nav{
+        zoom: .8;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav{
+        zoom: 1.1;
+    }
+}

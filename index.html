@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <title>Liquid navigation menu indicator - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== NAVBAR ===============-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <a href="#home" class="nav__link active-link">
+                    <i class="ri-home-5-line"></i>
+                    <span class="nav__name">
+                        Home
+                    </span>
+                </a>
+
+                <a href="#profile" class="nav__link">
+                    <i class="ri-user-line"></i>
+                    <span class="nav__name">
+                        Profile
+                    </span>
+                </a>
+
+                <a href="#message" class="nav__link">
+                    <i class="ri-chat-3-line"></i>
+                    <span class="nav__name">
+                        Message
+                    </span>
+                </a>
+
+                <a href="#mail" class="nav__link">
+                    <i class="ri-mail-open-line"></i>
+                    <span class="nav__name">
+                        Mail
+                    </span>
+                </a>
+
+                <a href="#settings" class="nav__link">
+                    <i class="ri-settings-line"></i>
+                    <span class="nav__name">
+                        Settings
+                    </span>
+                </a>
+
+                <svg class="indicator" width="94" height="56" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="47" cy="28" rx="24" ry="28"/>
+                    <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z"/>
+                    <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z"/>
+                </svg>
+            </ul>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="container">
+            <section id="home">
+                <h2>Home</h2>
+            </section>
+
+            <section id="profile">
+                <h2>Profile</h2>
+            </section>
+
+            <section id="message">
+                <h2>Message</h2>
+            </section>
+
+            <section id="mail">
+                <h2>Mail</h2>
+            </section>
+
+            <section id="settings">
+                <h2>Settings</h2>
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

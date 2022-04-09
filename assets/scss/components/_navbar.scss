@@ -1,0 +1,95 @@
+/*=============== NAVBAR ===============*/
+.container{
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    //Remove the property of 100vh, when inserting its content
+    & section{
+        height: 100vh;
+        padding: 2rem 0;
+    }
+    & h2{
+        text-align: center;
+        color: var(--title-color);
+    }
+}
+
+.nav{
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: 328px;
+    height: 72px;
+    background-color: var(--container-color);
+    box-shadow: 0 8px 32px hsla(231, 44%, 45%, .2);
+    margin: 0 auto;
+    padding: 1.5rem .5rem;
+    border-radius: .65rem;
+    overflow: hidden;
+    
+    &__list{
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+    }
+    &__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & i{
+            font-size: 1.5rem;
+            color: var(--title-color);
+            z-index: 20;
+            transition: .3s;
+        }
+    }
+    &__name{
+        font-size: var(--tiny-font-size);
+        position: absolute;
+        font-weight: 500;
+        transition: .4s;
+        transform: translateY(50px);
+        z-index: 20;
+        color: var(--body-color);
+        opacity: 0;
+    }
+}
+
+/* Indicator link */
+.indicator{
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    fill: var(--first-color);
+    transition: .3s;
+}
+
+/* Active link */
+.active-link i{
+    color: var(--body-color);
+}
+
+.active-link .nav__name{
+    opacity: 1;
+    transform: translateY(28px);
+}
+
+/* Move indicator */
+.nav__link:nth-child(1).active-link ~ .indicator{
+    transform: translateX(calc(56px * 0));
+}
+.nav__link:nth-child(2).active-link ~ .indicator{
+    transform: translateX(calc(56px * 1));
+}
+.nav__link:nth-child(3).active-link ~ .indicator{
+    transform: translateX(calc(56px * 2));
+}
+.nav__link:nth-child(4).active-link ~ .indicator{
+    transform: translateX(calc(56px * 3));
+}
+.nav__link:nth-child(5).active-link ~ .indicator{
+    transform: translateX(calc(56px * 4));
+}
