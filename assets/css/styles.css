@@ -1,0 +1,65 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(231, 48%, 56%);
+  --title-color: hsl(231, 24%, 20%);
+  --text-color: hsl(231, 4%, 45%);
+  --body-color: hsl(231, 100%, 99%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --tiny-font-size: .625rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --tiny-font-size: .688rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== NAVBAR ===============*/
+
+
+/* Indicator link */
+
+
+/* Active link */
+
+
+/* Move indicator */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For large devices */
